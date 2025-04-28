@@ -1,11 +1,10 @@
-
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
-
+import { resultTableData } from "@/data/resultTableData";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Sidebar from "../components/sidebar/sidebar";
 import { LogOut } from "lucide-react";
-import ResultTable from "@/components/ResultTable/ResultTable";
+import ResultTable from "@/components/resultTable/resultTable";
 function financialReport() {
   return (
     <div className="flex w-screen min-h-screen bg-[rgb(40,94,146)]">
@@ -67,7 +66,7 @@ function financialReport() {
           </div>
           <div className="my-4">
             <TabsContent value="resultat">
-              <ResultTable />
+              <ResultTable data={resultTableData} />
             </TabsContent>
             <TabsContent value="balanse"></TabsContent>
             <TabsContent value="sysselsetting"></TabsContent>
