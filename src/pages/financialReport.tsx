@@ -1,9 +1,9 @@
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
 import { resultTableData } from "@/data/resultTableData";
+import ResultTable from "@/components/resultTable/resultTable";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { LogOut } from "lucide-react";
-import ResultTable from "@/components/resultTable/resultTable";
 function financialReport() {
   return (
     <div>
