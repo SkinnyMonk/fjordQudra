@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import fjordQudraLogo from "../../assets/fjord-qudra-logo.png";
-import { sidebarItems, SidebarItem } from "../../config/sidebarConfig";
+import fjordQudraLogo from "@/assets/fjord-qudra-logo.png";
+import { sidebarItems, SidebarItem } from "@/config/sidebarConfig";
 
 const Sidebar = () => {
   const navigate = useNavigate();
