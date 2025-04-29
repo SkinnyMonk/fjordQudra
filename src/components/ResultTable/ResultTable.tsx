@@ -35,19 +35,25 @@ function ResultTable({ data }: Props) {
             </TableRow>
           </TableHeader>
           <TableBody>
-            {data.map((row, i) => (
-              <TableRow key={i}>
+            {data.map((row) => (
+              <TableRow key={row.id}>
                 <TableCell>{row.id}</TableCell>
                 <TableCell>{row.label}</TableCell>
                 {row.values.map((value, j) => {
                   const props = row.cellProps?.[j] || {};
                   return (
                     <TableCell key={j} {...props}>
-                      {value && typeof value === "object" && "props" in value ? (
+                      {value &&
+                      typeof value === "object" &&
+                      "props" in value ? (
                         value
-                      ) : value && typeof value === "object" && "__html" in value ? (
+                      ) : value &&
+                        typeof value === "object" &&
+                        "__html" in value ? (
                         <span
-                          dangerouslySetInnerHTML={{ __html: (value as { __html: string }).__html }}
+                          dangerouslySetInnerHTML={{
+                            __html: (value as { __html: string }).__html,
+                          }}
                         />
                       ) : (
                         value

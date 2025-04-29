@@ -17,7 +17,6 @@ export const resultTableData: TableRowData[] = [
     label: "Omsetning ekslusiv MVA",
     values: [0, 28526, 0],
     cellProps: [
-      {},
       { className: "bg-[rgb(235,235,235)]" },
       { className: "bg-[rgb(183,253,143)]" },
       {},

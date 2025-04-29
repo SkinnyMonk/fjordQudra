@@ -25,8 +25,13 @@ function financialReport() {
             </Avatar>
             <div className="text-xs">Bauta Electro AS</div>
           </div>
-
-          <LogOut />
+          <button
+            className="flex items-center justify-center rounded-full w-8 h-8 hover:bg-gray-100 transition-colors duration-200"
+            aria-label="Log out"
+            title="Log out"
+          >
+            <LogOut className="h-5 w-5 text-gray-600 hover:text-blue-600" />
+          </button>
         </div>
       </div>
 
